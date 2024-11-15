@@ -1,0 +1,14 @@
+@startuml
+title Use Case Diagram - Halaman Beasiswa
+
+actor Admin
+
+rectangle "Halaman Beasiswa" {
+    Admin --> (Lihat Daftar Beasiswa)
+    Admin --> (Tambah Beasiswa)
+    Admin --> (Lihat Detail Beasiswa)
+    Admin --> (Edit Beasiswa)
+    Admin --> (Hapus Beasiswa)
+}
+
+@enduml

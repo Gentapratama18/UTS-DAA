@@ -1,0 +1,64 @@
+Analisis dan Kebutuhan Proyek Halaman Beasiswa
+1. Analisis Kebutuhan
+
+Stakeholders
+
+Admin: Sebagai pengguna utama yang akan mengelola data beasiswa, termasuk menambah, mengedit, melihat, dan menghapus data beasiswa.
+Calon Penerima Beasiswa: Meskipun tidak langsung mengakses sistem ini, mereka adalah pihak yang membutuhkan transparansi dan kejelasan informasi terkait program beasiswa.
+Masalah yang Dihadapi
+
+Pengelolaan data beasiswa yang manual atau terpisah-pisah menyebabkan kesulitan dalam pencatatan dan pengelolaan data.
+Kesulitan dalam mengakses dan memperbarui data secara cepat, yang mengakibatkan informasi yang tidak up-to-date.
+Potensi kesalahan pencatatan data yang tinggi karena kurangnya sistem yang terstruktur.
+Tidak adanya kontrol atau validasi input yang memadai, sehingga mengakibatkan inkonsistensi data.
+Tujuan Pengembangan Sistem
+
+Membuat sistem manajemen data beasiswa yang terintegrasi dan mudah digunakan oleh admin.
+Menyediakan akses cepat dan akurat ke data beasiswa, sehingga admin dapat melakukan pembaruan informasi secara efisien.
+Memastikan konsistensi dan akurasi data beasiswa dengan menyediakan validasi input.
+Menyediakan transparansi data kepada pihak terkait dengan akses terbatas dan sesuai hak akses.
+2. Kebutuhan Sistem
+
+a. Kebutuhan Fungsional
+
+Pengelolaan Data Beasiswa
+
+Admin dapat menambah data beasiswa baru, termasuk detail seperti nama beasiswa, jenis, nominal, tanggal pendaftaran, dan jurusan terkait.
+Admin dapat melihat daftar beasiswa dalam tampilan tabel yang dapat difilter dan dicari.
+Admin dapat melihat detail beasiswa dalam modal popup untuk informasi yang lebih lengkap.
+Admin dapat mengedit data beasiswa yang sudah ada untuk memperbarui informasi jika diperlukan.
+Admin dapat menghapus data beasiswa yang sudah tidak berlaku.
+Fitur Pencarian dan Filter
+
+Admin dapat mencari data beasiswa berdasarkan kata kunci tertentu seperti nama beasiswa, jenis beasiswa, atau jurusan.
+Admin dapat memfilter data beasiswa berdasarkan kategori tertentu untuk mempermudah navigasi data.
+Validasi Data
+
+Sistem harus memiliki validasi input pada form pendaftaran atau pengeditan beasiswa untuk memastikan data yang dimasukkan sesuai format yang diharapkan (misalnya nominal beasiswa hanya boleh berisi angka).
+Keamanan Akses
+
+Hanya admin yang berwenang yang dapat mengakses dan mengelola data beasiswa untuk menjaga keamanan data.
+b. Kebutuhan Non-Fungsional
+
+Usability
+
+Antarmuka pengguna harus mudah digunakan dan intuitif bagi admin, dengan tampilan yang jelas untuk setiap fungsi.
+Scalability
+
+Sistem harus mampu menangani penambahan data beasiswa yang terus bertambah seiring waktu tanpa mengurangi performa.
+Reliability
+
+Sistem harus stabil dan dapat diandalkan, sehingga dapat diakses kapan saja oleh admin tanpa gangguan.
+Performance
+
+Sistem harus responsif, dengan waktu pemuatan halaman yang cepat, terutama pada tabel yang menampilkan banyak data beasiswa.
+Data Security
+
+Sistem harus memiliki fitur keamanan untuk melindungi data beasiswa, seperti autentikasi dan otorisasi akses untuk admin.
+3. Kebutuhan Teknologi
+
+Backend: Menggunakan framework seperti Laravel atau Node.js untuk menangani logika backend dan manajemen database.
+Frontend: Menggunakan framework seperti Vue.js atau React untuk antarmuka yang interaktif dan responsif.
+Database: Menggunakan MySQL atau PostgreSQL untuk penyimpanan data beasiswa.
+Authentication: Sistem autentikasi dan otorisasi untuk memastikan hanya admin yang berwenang yang dapat mengakses sistem.
+Server/Hosting: Menggunakan server yang dapat diakses online agar admin dapat mengelola data beasiswa dari mana saja.

@@ -1,0 +1,39 @@
+@startuml
+title Flowchart Halaman Beasiswa
+
+start
+:User opens the Beasiswa page;
+
+if (User clicks "New beasiswa") then
+    -yes-> :Display "New beasiswa" form;
+    :User fills in the form and submits;
+    :Save data to the database;
+else
+    -no-> if (User selects a beasiswa record) then
+        -yes-> :Display options (Edit, View, Delete);
+        if (User clicks "View") then
+            -yes-> :Open modal showing beasiswa details;
+            :User can view information;
+            :Close modal;
+        else
+            -no-> if (User clicks "Edit") then
+                -yes-> :Open modal for editing beasiswa;
+                :User edits the data and submits;
+                :Update data in the database;
+                :Close modal;
+            else
+                -no-> if (User clicks "Delete") then
+                    -yes-> :Prompt for confirmation;
+                    if (User confirms) then
+                        -yes-> :Delete data from the database;
+                    else
+                        -no-> :Cancel deletion;
+                    endif
+                endif
+            endif
+        endif
+    endif
+endif
+
+stop
+@enduml
