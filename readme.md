@@ -1,6 +1,6 @@
 # PERKENALAN
-- Nama:
-- NIM: 
+- Nama: Genta Pratama
+- NIM: 20230801239
 - Fakultas: Ilmu Komputer
 - Jurusan: Teknik Informatika
 - Mata Kuliah: Desain dan Analisis Algoritma
